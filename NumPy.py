@@ -1,8 +1,84 @@
 import numpy as np
-arr=np.array([[5,6,7],[9,8,2]])
-for x in arr:
-    for y in x:
-        print(y)
+arr = np.array([ 1,2,3,4,5,6,7,8,9,10])
+
+filter_array = []
+for element in arr:
+    if element%2 ==0:
+        filter_array.append(True)
+    else:
+        filter_array.append(False)
+new_array = arr[filter_array]
+print(new_array)
+print(filter_array)
+
+# arr = np.array([3,8,3,7,1,5,0,6])
+# filter_array = []
+
+# for element in arr:
+#     if element > 5:
+#         filter_array.append(True)
+#     else:
+#         filter_array.append(False)
+
+# new_array = arr[filter_array]
+# print(new_array)
+# print(filter_array)
+# arr = np.array([44,55,66,77])
+# x = [True, False, True, False]
+# filter_array = arr[x]
+# print(filter_array)
+# print(x)
+
+# arr1 = np.array([6,4,7,3,8,2,9,1,0,5,7])
+# arr2 = np.array([True , False, True, False])
+# print(np.sort(arr1))
+# print(np.sort(arr2))
+# arr = ['pakistan', 'india' , 'bangladesh']
+# print(np.sort(arr))
+# arr = np.array([1,2,3,4,5,4,4])
+# print(arr)
+# new_arr = np.where(arr == 4)
+# print(new_arr)
+# arr = np.array([1,2,3,4,5,6])
+# arr2 = np.array_split(arr,3)
+# print(arr2)
+
+# arr = np.array([[1,2,3,4],[5,6,7,8]])
+# new_arr = np.array_split(arr, 4)
+# print(new_arr)
+# arr1 = np.array([[1,2,3],[10,22,33]])
+# arr2 = np.array([[7,8,9],[77,88,99]])
+# arr3 = np.concatenate((arr1, arr2 ) ,axis = 1)
+# print(arr3)
+# arr2= np.array([4,5,6])
+# arr3 = np.concatenate((arr1, arr2))
+# print(arr3)
+
+# arr = np.array([4,5,6,7])
+# for idx, x in np.ndenumerate(arr):
+#     print(idx)
+#     print(x)
+# arr = np.array([[1,2,3,4],[8,9,0,6]])
+# for idx, x in np.ndenumerate(arr):
+#     print(idx)
+#     print(x)
+# for i in np.nditer(arr[: , ::2]):
+#     print(i)
+# for x in np.nditer(arr, flags = ['buffered'], op_dtypes = ['S']):
+#     print(x)
+# arr = np.array([[1,2,3],[4,5,6]])
+# for x in np.nditer(arr):
+#     print(x)
+#     # print(arr)
+# print(arr)
+# arr = np.array([1,2,3,4])
+# for x in np.nditer(arr):
+#     print(x)
+
+# arr=np.array([[5,6,7],[9,8,2]])
+# for x in arr:
+#     for y in x:
+#         print(y)
         
 # arr = np.array([[2,3,5,8],[3,4,5,6]])
 # print(arr.shape)
