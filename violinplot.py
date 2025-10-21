@@ -1,0 +1,37 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns 
+
+data = sns.load_dataset("tips")
+
+sns.violinplot(x="time",y="total_bill",data=data,order=["Dinner","Lunch"],inner="quartile")
+plt.title("violin plot in seaborn")
+plt.show()
+
+# sns.violinplot(x="time",y="total_bill",data=data,order=["Dinner","Lunch"],inner="quartile")
+# plt.title("violin plot in seaborn")
+# plt.show()
+# sns.violinplot(x="time",y="total_bill",data=data,order=["Dinner","Lunch"],inner="stick")
+# plt.title("violin plot in seaborn")
+# plt.show()
+# sns.violinplot(x="time",y="total_bill",data=data,order=["Dinner","Lunch"],inner="box")
+# plt.title("violin plot in seaborn")
+# plt.show()
+# sns.violinplot(x="total_bill",y="day",data=data,hue="time",linewidth=2,palette="coolwarm")
+# plt.title("violin plot in seaborn")
+# plt.show()
+# sns.violinplot(x="time",y="total_bill",data=data,order=["Dinner","Lunch"])
+# plt.title("violin plot in seaborn")
+# plt.show()
+# sns.violinplot(x="day",y="total_bill",data=data,hue="time",linewidth=2,palette="coolwarm")
+# plt.title("violin plot in seaborn")
+# plt.show()
+# sns.violinplot(x="day",y="total_bill",data=data,hue="time",linewidth=2,split=True)
+# plt.title("violin plot in seaborn")
+# plt.show()
+# sns.violinplot(x="day",y="total_bill",data=data,hue="time",linewidth=2)
+# plt.title("violin plot in seaborn")
+# plt.show()
+# sns.violinplot(x="day",y="total_bill",data=data)
+# plt.title("violin plot in seaborn")
+# plt.show()
